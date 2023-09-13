@@ -10,7 +10,8 @@ const Currency = () => {
             dispatch({
                 type: 'CHG_CURRENCY',
                 payload: val,
-            })
+            });
+           
 
         if (val==="$") setCurrencyString( "$ Dollar");  
         if (val==="£") setCurrencyString( "£ Pound");
@@ -22,7 +23,7 @@ const Currency = () => {
     
 
   return (
-        <div className='color-text-white' > Currency({currencyString})   {
+        <div className='alert color-text-white' > Currency({currencyString})   {
             <select   
             name="Currency" id="Currency"
             className='color-green' 
