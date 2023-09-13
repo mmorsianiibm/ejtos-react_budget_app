@@ -1,5 +1,6 @@
 import React, { useContext,useState } from 'react';
 import { AppContext } from '../context/AppContext';
+import '../index.css';
 
 const Currency = () => {
   const {dispatch,currency } = useContext(AppContext);
@@ -21,10 +22,10 @@ const Currency = () => {
     
 
   return (
-        <div className='alert alert-success' > Currency({currencyString})   {
+        <div className='color-text-white' > Currency({currencyString})   {
             <select   
             name="Currency" id="Currency"
-            className='alert alert-success' 
+            className='color-green' 
              onChange={event=>changeCurrency(event.target.value)}
             >
                 <option value="$">$ Dollar</option>
